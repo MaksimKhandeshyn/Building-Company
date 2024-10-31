@@ -19,61 +19,84 @@
       href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
+      <a class="header__link" href="./index.html">
+        <svg class="header__logo" width="101" height="23">
+          <use href="./icons/symbol-defs.svg#icon-logo"></use>
+        </svg>
+      </a>
       <h1 class="header__title">Partner With Konstuct</h1>
       <p class="header__info">An award-winnig construction manage firm</p>
-
-      <nav class="nav">
-        <ul class="header__nav-list">
-          <li class="nav__list-item">
-            <a href="#" class="nav__item-link">Home</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__item-link">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__item-link">Services</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__item-link">Work</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__item-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <p class="header__scroll">Scroll down</p>
     </header>
-    <main>
-      <section class="story">
-        <div class="container">
-          <div class="story__container">
-            <h2 class="story__title">Our Story</h2>
-            <p class="story__description">
-              Founded in 2011 by John Mathew Smith, Konstruct has become the
-              number one construction managment firm
-            </p>
-            <p class="story__info">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat.
-            </p>
-          </div>
 
-          <ul class="story__list">
-            <li class="story__list-item">We plan</li>
-            <li class="story__list-item">We manage</li>
-            <li class="story__list-item">We build</li>
+    <main>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__link">
+            <svg class="nav__logo" width="101" height="23">
+              <use href="./icons/symbol-defs.svg#icon-black-logo"></use>
+            </svg>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#" class="nav__item-link">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__item-link">About</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__item-link">Services</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__item-link">Work</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__item-link">Contact</a>
+            </li>
           </ul>
+        </nav>
+      </div>
+
+      <section class="story">
+        <div class="container wrapper">
+          <h2 class="title">Our Story</h2>
+          <div class="story__container">
+            <div class="warpper">
+              <p class="story__description">
+                Founded in 2011 by John Mathew Smith,
+                <span class="part">Konstruct</span> has become the number one
+                construction managment firm
+              </p>
+              <p class="story__info">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+              </p>
+            </div>
+            <ul class="story__list">
+              <li class="story__list-item">
+                <span class="item__text">We plan</span>
+              </li>
+              <li class="story__list-item">
+                <span class="item__text">We manage</span>
+              </li>
+              <li class="story__list-item">
+                <span class="item__text">We build</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="capabilities">
         <div class="container">
-          <h2 class="capabilities__title">Our capabilities</h2>
+          <h2 class="title capabilities__title">Our capabilities</h2>
           <p class="capabilities__info">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
@@ -82,6 +105,7 @@
 
           <ul class="capabilities__list">
             <li class="capabilities__list-item">
+              <img src="./images/project.png" alt="..." />
               <h3 class="list__item-title">
                 Project and construction management
               </h3>
@@ -91,6 +115,8 @@
               </p>
             </li>
             <li class="capabilities__list-item">
+              <img src="./images/structure.png" alt="..." />
+
               <h3 class="list__item-title">Stucture audit and maintenance</h3>
               <p class="list__item-info">
                 Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed
@@ -99,6 +125,7 @@
               </p>
             </li>
             <li class="capabilities__list-item">
+              <img src="./images/factory.png" alt="..." />
               <h3 class="list__item-title">
                 Factory construction and modeling
               </h3>
@@ -129,9 +156,13 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <h2 class="footer__title">Company</h2>
+        <svg class="header__logo" width="101" height="23">
+          <use href="./icons/symbol-defs.svg#icon-logo"></use>
+        </svg>
         <p class="footer__info">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
@@ -163,6 +194,30 @@
             </a>
             <a href="tel+239942334022">+23 994 233 4022</a>
             <a href="mailto:info@konstruct.com">info@konstruct.com</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social-media">
+          <li class="social-media__item">
+            <a href="#" class="social-media__link">
+              <svg class="social-media__icon">
+                <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link">
+              <svg class="social-media__icon">
+                <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link">
+              <svg class="social-media__icon">
+                <use href="./icons/symbol-defs.svg#icon-google"></use>
+              </svg>
+            </a>
           </li>
         </ul>
 
